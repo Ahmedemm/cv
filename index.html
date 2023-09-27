@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Ahmed El Mahjoub</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>AHMED EL MAHJOUB</h1>
+      </header>
+      <div class="colone-1"><img src="Photo/toon_link.avif" alt="" /></div>
+      <div class="column-2">
+        <div class="circle">
+          <div class="text">
+            <p>AhmedEMB-AhmedEMB-AhmedEMB-AhmedEMB-Ahmed-</p>
+          </div>
+        </div>
+        <script>
+          const text = document.querySelector(".text p");
+          text.innerHTML = text.innerText
+            .split("")
+            .map(
+              (char, i) =>
+                `<span style="transform:rotate(${i * 8.3}deg)">${char}</span>`
+            )
+            .join("");
+        </script>
+        <h1>HELLO !</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+          doloremque deleniti laudantium aliquam iste, sapiente autem laborum
+          eaque mollitia esse explicabo quas quaerat, amet reiciendis omnis
+          quisquam repudiandae voluptate eius placeat. Sint error eius
+          reiciendis a quo numquam rerum tempora nulla. Voluptate quos quibusdam
+          dignissimos dolore, cum veniam debitis molestias nobis magni ipsum
+          esse iste alias, necessitatibus repellendus expedita vel? Nihil itaque
+          blanditiis minus, iusto ratione voluptates nemo, quidem voluptate
+        </p>
+      </div>
+
+      <div class="column-3"><p>Contact: 0494048039</p></div>
+      <div class="colone-4"><p>Email: elmahjoubahmed@icloud.com</p></div>
+      <div class="colone-5">
+        <h1>EDUCATION</h1>
+        <ul>
+          <li>CESS:2017</li>
+          <li>heaj:2017-2019 diplome non obtenu</li>
+          <li>HELB:2019-2020 diplome non obtenue</li>
+          <li>BECODE 2023-2024</li>
+        </ul>
+        <h1>EXPERIENCE</h1>
+        <ul>
+          <li>delhaize 2021-2023</li>
+        </ul>
+      </div>
+      <div class="colone-6">
+        <h1>SKILL</h1>
+        <ul>
+          <li>HTML :</li>
+          <li>CSS :</li>
+          <li>JS :</li>
+          <li>Blender :</li>
+        </ul>
+        <h1>Langues</h1>
+        <ul>
+          <li>Francais</li>
+          <li>Néerlandais</li>
+          <li>Anglais</li>
+          <li>Arabe</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
