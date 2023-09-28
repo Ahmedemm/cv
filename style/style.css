@@ -23,25 +23,31 @@ body {
 .text span {
   position: absolute;
   left: 50%;
-  font-size: 1.2em;
+  font-size: 1em;
   transform-origin: 0 100px;
+  z-index: 2;
 }
 .circle {
   position: relative;
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  display: flex;
+  display: relative;
   justify-content: center;
   justify-items: center;
   right: 250px;
+  bottom: 200px;
+  left: 310px;
+  
 }
 img {
+  z-index: 1;
   position: relative;
-  width: 40%;
-  height: 80%;
+  width: 30%;
+  height: auto;
   margin-left: 180px;
-  margin-top: 60px;
+  margin-top: 30px;
+  border-radius: 10%;
 }
 .container {
   height: 100vh;
@@ -61,19 +67,21 @@ header > h1 {
   rotate: -90deg;
   text-align: center;
   white-space: nowrap;
-  margin-top: 650px;
-  font-size: 100px;
+  margin-top: 520px;
+  font-size: 90px;
 }
 .column-2 > h1 {
   transform: scaleY(2);
   letter-spacing: 5px;
   position: relative;
-  margin-top: -50px;
+  margin-top: 100px;
   text-align: center;
   font-size: 60px;
 }
 .column-2 > p {
   font-family: "Raleway", sans-serif;
+  text-overflow: ellipsis;
+  max-width: 100%;
 }
 .column-3 {
   background: black;
@@ -83,7 +91,7 @@ header > h1 {
   text-align: center;
   font-size: 20px;
   position: relative;
-  bottom: 10px;
+  bottom: 15px;
 }
 .colone-4 {
   background: black;
@@ -92,7 +100,7 @@ header > h1 {
   color: white;
   font-size: 20px;
   position: relative;
-  bottom: 10px;
+  bottom: 15px;
 }
 
 .colone-5 h1 {
@@ -101,11 +109,19 @@ header > h1 {
   position: relative;
   left: 20px;
 }
+.colone-5 ul{
+  font-family: "Raleway", sans-serif;
+  text-wrap: nowrap;
+
+}
 .colone-6 h1 {
   text-align: left;
   font-family: "Raleway", sans-serif;
   position: relative;
   left: 20px;
+}
+.colone-6{
+  font-family: "Raleway", sans-serif;
 }
 @media screen and (max-width: 768px) {
   .container {
