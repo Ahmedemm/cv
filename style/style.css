@@ -32,13 +32,8 @@ body {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  display: relative;
-  justify-content: center;
-  justify-items: center;
-  right: 250px;
-  bottom: 200px;
-  left: 310px;
-  
+  margin-top: -30%;
+  margin-left: 60%;
 }
 img {
   z-index: 1;
@@ -109,10 +104,9 @@ header > h1 {
   position: relative;
   left: 20px;
 }
-.colone-5 ul{
+.colone-5 ul {
   font-family: "Raleway", sans-serif;
   text-wrap: nowrap;
-
 }
 .colone-6 h1 {
   text-align: left;
@@ -120,19 +114,40 @@ header > h1 {
   position: relative;
   left: 20px;
 }
-.colone-6{
+.colone-6 {
   font-family: "Raleway", sans-serif;
 }
+
 @media screen and (max-width: 768px) {
   .container {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
   }
-  header {
+
+  .circle {
+    width: 150px;
+    height: 150px;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    margin: 0 auto;
     display: none;
   }
-  .column-2 {
-    width: 100%;
+
+  img {
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+    margin: auto;
+  }
+
+  header > h1 {
+    margin-top: 0;
+    display: none;
+  }
+
+  .column-2 > h1 {
+    font-size: 40px;
     margin-top: 20px;
   }
 }
